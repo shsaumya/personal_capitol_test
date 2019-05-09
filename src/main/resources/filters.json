@@ -1,0 +1,23 @@
+[
+  {
+    "filterName": "PLAN_NAME",
+    "type": "String",
+    "operators":["EQ","LIKE"]
+  },
+  {
+    "filterName": "SPONSOR_DFE_NAME",
+    "type": "String",
+    "operators":["EQ", "LIKE"]
+  },
+    {
+    "filterName": "ACK_ID",
+    "type": "String",
+    "operators":["EQ","LIKE"]
+  },
+  {
+    "filterName": "SPONS_DFE_MAIL_US_STATE",
+    "type": "String",
+    "operators":["EQ","LIKE"]
+  }
+
+]

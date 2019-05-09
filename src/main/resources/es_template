@@ -1,0 +1,42 @@
+
+PUT https://search-personal-capital-test-7yu266uc7j2zwwqqmyizruetke.us-east-2.es.amazonaws.com/_template/fin_plan_template?pretty
+
+Json body for template :
+
+{
+	"order": 1,
+	"template": "personal_capital_fin_*",
+	"settings": {
+		"index": {
+			"number_of_shards": "1",
+			"number_of_replicas": "1"
+		}
+	},
+	"mappings": {
+		"fin_plan_v1": {
+			"_source": {
+				"enabled": true
+			},
+			"properties": {
+				"ACK_ID": {
+					"type": "keyword"
+				},
+				"PLAN_NAME": {
+					"type": "keyword"
+				},				
+				"SPONSOR_DFE_NAME": {
+					"type": "keyword"
+				},
+				"SPONS_DFE_MAIL_US_STATE": {
+					"type": "keyword"
+				},
+				"ADMIN_SIGNED_NAME": {
+					"type": "keyword"
+				}											
+			},
+			"_all": {
+				"enabled": false
+			}
+		}
+	}
+}
